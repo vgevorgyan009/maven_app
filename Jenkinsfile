@@ -19,8 +19,8 @@ pipeline {
         }
         stage('deploy') {
             environment {
-               AWS_ACCESS_KEY_ID = credentials('jenkins_aws_access_key_id_2')
-               AWS_SECRET_ACCESS_KEY = credentials('jenkins_aws_secret_access_key_2')
+               AWS_ACCESS_KEY_ID = credentials('my_secret_login')
+               AWS_SECRET_ACCESS_KEY = credentials('my_secret_pass')
             }
             steps {
                 script {
